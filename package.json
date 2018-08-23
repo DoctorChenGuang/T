@@ -1,0 +1,37 @@
+{
+  "name": "T",
+  "version": "1.0.0",
+  "author": "none",
+  "description": "Just for practicing ts.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DoctorChenGuang/T.git"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.0.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "codecov": "^2.3.0",
+    "jest": "^21.0.4"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/DoctorChenGuang/T",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "travis": "jest --coverage && codecov",
+    "t": "node test.js"
+  },
+  "jest": {
+    "transform": {
+      "__tests__[\\\\/].+\\.js$": "babel-jest"
+    }
+  }
+}
